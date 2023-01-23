@@ -3,7 +3,7 @@
 ## Idea
 
 ## User flow
-![User flow image](user flow.png)
+![User flow image](/user%20flow.png)
 ## Database schema
 
 ## Tech stack
