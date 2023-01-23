@@ -3,9 +3,9 @@
 ## Idea
 
 ## User flow
-![User flow image](/user%20flow.png)
+![User flow image](/images/user%20flow.png/)
 ## Database schema
-
+![Database schema](/Images//Database.png/)
 ## Tech stack
 
 ## Credit Statement
