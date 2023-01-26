@@ -4,6 +4,7 @@
 
 ## User flow
 ![User flow image](/Images/user%20flow.png/)
+
 ## Database schema
 ![Database schema](/Images//Database.png/)
 ## Tech stack
