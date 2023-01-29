@@ -12,15 +12,12 @@ module.exports = {
         xl: '1440px',
       },
       colors: {
-        'blue': '#1fb6ff',
-        'purple': '#7e5bef',
-        'pink': '#ff49db',
-        'orange': '#ff7849',
-        'green': '#13ce66',
-        'yellow': '#ffc82c',
-        'gray-dark': '#273444',
-        'gray': '#8492a6',
-        'gray-light': '#d3dce6',
+        'blue': '#88e8e6',
+        'pink': '#c15a6b',
+        'gray-dark': '#313c44',
+        'green': '#345353',
+        'gray-light': '#617a87',
+        'dark-blue':'#69a8a8'
       },
       fontFamily: {
         sans: ['Graphik', 'sans-serif'],
