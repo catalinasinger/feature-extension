@@ -4,4 +4,3 @@ DROP TABLE if exists ingredients; CREATE TABLE ingredients(id INT NOT NULL AUTO_
 
 INSERT INTO recipes(name, ingredients) VALUES ('Tom Collins' , 'Gin 50ml');
 
-
