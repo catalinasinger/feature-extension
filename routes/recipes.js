@@ -15,20 +15,20 @@ res.status(500).send()
 
 //get one recipe
 router.get('/:id', async function(req, res, next) {
-  const params= req.params
-  const id = paramas.id
+  const params = req.params
+  const id = params.id
 
-  const results = await db ("select * from recipes where id = ${id}")
+  const results = await db (`select * from recipes where id = ${id}`)
 
   const recipes = results.data
-  const recipe = recipe [0]
+  const recipe = recipes[0]
 
   if (!recipe){
-    res.status = (404).send()
+    res.status(404).send()
     return
   }
 
-  res.send =({recipes})
+  res.send(recipe)
 });
 
 

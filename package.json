@@ -6,7 +6,6 @@
     "start": "nodemon ./bin/www",
     "migrate": "node model/database.js"
   },
-  
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
@@ -22,9 +21,8 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.2.4"
-  }, 
-    "files.associations": {
-      "*.css": "tailwindcss"
-    }
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
   }
-
+}
