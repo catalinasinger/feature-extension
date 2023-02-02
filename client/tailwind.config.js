@@ -31,6 +31,11 @@ module.exports = {
         borderRadius: {
           '4xl': '2rem',
         }
-      }
-    }
+      },
+      plugins: [require("daisyui")
+      ],
+      "tailwindCSS.includeLanguages": { plaintext: "javascript" },
+    },
   }
+
+  
