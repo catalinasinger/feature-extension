@@ -1,9 +1,35 @@
 import './App.css';
 import logo from './Images/Logo.png'
 import IngredientForm from './Form.js';
+import React, { useEffect, useState } from "react";
+// import {
+//   createBrowserRouter,
+//   RouterProvider,
+//   Route,
+//   Link,
+// } from "react-router-dom";
+
 
 function App() {
+  const [recipes, setRecipes] = useState([]);
+  
+  
+  const fetchData = () => {
+    return fetch("localhost:5050/recipes")
+          .then((response) => response.json())
+          .then((data) => setRecipes(data));
+  }
+
+  useEffect(() => {
+    fetchData();
+  },[])
+
+
+
   return (
+    
+    // <BrowserRouter>
+    // <Routes>
     <div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
     {/*This is the outside border   */}
     <ul class="flex border-b"> 
@@ -17,13 +43,16 @@ function App() {
   </li>
   {/* This is the recipes box  */}
 </ul>
- 
+
 <center>
-<img src={logo} width="200" height="100" /></center>
+<img src={logo} width="200" height="100" />
+</center>
 
       <p className="text-3xl text-gray-700 font-bold mb-5">
         <center>Welcome</center>
       </p>
+
+
 
       <p className="text-pink">
         <center>text text</center>
@@ -32,10 +61,15 @@ function App() {
 
       <IngredientForm />
 
+      const RecipesList = ({recipes ={} }) 
 
-      const RecipesList = ({recipes ={} })
 
-    </div>
+
+
+      </div>
+// </Routes>
+// </BrowserRouter>
+    
   );
 }
 export default App;
