@@ -4,7 +4,7 @@ DROP TABLE if exists recipes;
 CREATE TABLE recipes(
   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(40) not null,
-  image VARCHAR (200) not null,
+  image VARCHAR (300) not null,
   complete BOOLEAN
 );
 

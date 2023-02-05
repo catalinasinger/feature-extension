@@ -22,3 +22,6 @@ function IngredientsData() {
   );
 }
 export default IngredientsData;
+
+
+
