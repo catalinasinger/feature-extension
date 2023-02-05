@@ -1,13 +1,7 @@
 import './App.css';
 import logo from './Images/Logo.png'
-import RecipesPage from './RecipesPage'
+import RecipesPage from '/Users/shauni/Desktop/codeop-mvp1/client/src/Components/RecipesPage.js'
 import React from "react";
-// import {
-//   createBrowserRouter,
-//   RouterProvider,
-//   Route,
-//   Link,
-// } from "react-router-dom";
 
 
 function App() {
@@ -20,8 +14,9 @@ function App() {
           <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold" href="#">Home</a>
         </li>
         {/* This is the home box */}
+
         <li class="mr-1">
-          <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#">Recipes</a>
+          <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="./client/src/Components/RecipesPage.js">Recipes</a>
         </li>
         {/* This is the recipes box  */}
       </ul>

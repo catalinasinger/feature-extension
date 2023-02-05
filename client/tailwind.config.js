@@ -11,6 +11,16 @@ module.exports = {
         lg: '976px',
         xl: '1440px',
       },
+      daisyui: {
+        styled: true,
+        themes: true,
+        base: true,
+        utils: true,
+        logs: true,
+        rtl: false,
+        prefix: "",
+        darkTheme: "dark",
+      },
       colors: {
         'blue': '#88e8e6',
         'pink': '#c15a6b',
@@ -30,12 +40,11 @@ module.exports = {
         },
         borderRadius: {
           '4xl': '2rem',
-        }
+        }  
       },
-      plugins: [require("daisyui")
-      ],
-      "tailwindCSS.includeLanguages": { plaintext: "javascript" },
     },
+    plugins: [
+      require("daisyui")
+    ],
+    "tailwindCSS.includeLanguages": { plaintext: "javascript" },
   }
-
-  

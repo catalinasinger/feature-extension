@@ -22,10 +22,20 @@ INSERT INTO recipes(name, image) VALUES ('Margarita', 'https://assets.bonappetit
 INSERT INTO ingredients(text, recipe_id) VALUES ('Tequila', 1);
 INSERT INTO ingredients(text, recipe_id) VALUES ('Lime Juice', 1);
 INSERT INTO ingredients(text, recipe_id) VALUES ('Triple sec', 1);
-INSERT INTO ingredients(text, recipe_id) VALUES ('Slice lime', 1);
 
-INSERT INTO recipes(name, image) VALUES ('Cosmopolitan', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt8ZmPAyKfsb9htP3K7BOLcLiL6ajOvzFJZw&usqp=CAU');
-INSERT INTO ingredients(text, recipe_id) VALUES ('Vodka 30ml', 2);
-INSERT INTO ingredients(text, recipe_id) VALUES ('Triple sec 25 ml', 2);
-INSERT INTO ingredients(text, recipe_id) VALUES ('Cranberry Juice 30ml', 2);
-INSERT INTO ingredients(text, recipe_id) VALUES ('Orange zest (garnish)', 2);
+INSERT INTO recipes(name, image) VALUES ('Cosmopolitan', 'https://www.thespruceeats.com/thmb/_NPlS1v9qrunNCOU5zZ0HsrcsSw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cosmopolitan-cocktail-recipe-759633-hero-01-9d9d64891a164107b869b6c38c3b25f9.jpg');
+INSERT INTO ingredients(text, recipe_id) VALUES ('Vodka', 2);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Triple sec', 2);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Cranberry Juice', 2);
+
+INSERT INTO recipes(name, image) VALUES ('Manhattan', 'https://cdn.shopify.com/s/files/1/1668/2517/articles/Pinhook_Magazine_Cocktails-Manhattan_1600x.jpg?v=1646074586');
+INSERT INTO ingredients(text, recipe_id) VALUES ('Bourbon', 3);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Rosso Vermouth', 3);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Sugar', 3);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Angostura bitters', 3);
+
+INSERT INTO recipes(name, image) VALUES ('Tom Collins', 'https://www.yummytemple.com/wp-content/uploads/2022/04/Refreshing-cocktail-Tom-Collins-with-gin-1.jpg.webp');
+INSERT INTO ingredients(text, recipe_id) VALUES ('Gin', 4);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Lime Juice', 4);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Sugar', 4);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Soda', 4);
