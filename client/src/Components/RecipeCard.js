@@ -17,22 +17,24 @@ const [ingredients,setIngredients] = useState([]);
 
   return (
     <div key={recipe.id}>
+    <div class="grid grid-cols-4 gap-4">
       <div class="max-w-sm rounded overflow-hidden shadow-lg">
         <img class="w-full" src={recipe.image} alt={recipe.name} />
         <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">{recipe.name}</div>
+          <div class="font-bold text-xl mb-5">{recipe.name}</div>
           <p class="text-gray-700 text-base">{ingredients.map((ingredient) =>
           <div key ={ingredient.id}> {ingredient.text}</div>)}</p>
 
-
         </div>
         <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+          {/* <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
             #text
-          </span>
+          </span> */}
+        </div>
         </div>
       </div>
     </div>
+    
   );
 }
 

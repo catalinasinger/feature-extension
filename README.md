@@ -6,7 +6,8 @@
 ![User flow image](/Images/user%20flow.png/)
 
 ## Database schema
-![Database schema](/Images//Database.png/)
+![Database schema](/Images//Database schema.png/)
+
 ## Tech stack
 
 ## Credit Statement

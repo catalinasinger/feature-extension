@@ -16,7 +16,7 @@ function App() {
         {/* This is the home box */}
 
         <li class="mr-1">
-          <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="./client/src/Components/RecipesPage.js">Recipes</a>
+          <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="./client/src/Components/RecipesPage.js">Recipes</a>
         </li>
         {/* This is the recipes box  */}
       </ul>
@@ -25,13 +25,13 @@ function App() {
         <img src={logo} width="200" height="100" alt="Logo" />
       </center>
 
-      <p className="text-3xl text-gray-700 font-bold mb-5">
+      {/* <p className="text-3xl text-gray-700 font-bold mb-5">
         <center>Welcome</center>
-      </p>
+      </p> */}
 
-      <p className="text-pink">
+      {/* <p className="text-pink">
         <center>text text</center>
-      </p>
+      </p> */}
 
       <RecipesPage />
     </div>
