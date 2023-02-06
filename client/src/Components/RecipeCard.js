@@ -17,9 +17,8 @@ const [ingredients,setIngredients] = useState([]);
 
   return (
     <div key={recipe.id}>
-    <div class="grid grid-cols-4 gap-4">
       <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <img class="w-full" src={recipe.image} alt={recipe.name} />
+        <img class="w-full aspect-[5/4]" src={recipe.image} alt={recipe.name} />
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-5">{recipe.name}</div>
           <p class="text-gray-700 text-base">{ingredients.map((ingredient) =>
@@ -33,7 +32,7 @@ const [ingredients,setIngredients] = useState([]);
         </div>
         </div>
       </div>
-    </div>
+  
     
   );
 }

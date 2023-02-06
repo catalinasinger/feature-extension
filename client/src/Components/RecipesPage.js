@@ -16,12 +16,9 @@ function RecipesPage() {
   }, []);
 
   return (
-    <div>
+    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-4">
       {recipes.map((recipe) => (
-        <div key={recipe.id}>
-
-<RecipeCard recipe={recipe} />  
-        </div>
+<RecipeCard key={recipe.id} recipe={recipe} />  
       ))}
     </div>
   );
