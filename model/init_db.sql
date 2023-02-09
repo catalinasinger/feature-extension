@@ -18,7 +18,7 @@ ALTER TABLE ingredients
 ADD FOREIGN KEY (recipe_id) REFERENCES recipes(id);
 
 
-INSERT INTO recipes(name, image) VALUES ('Margarita', 'https://assets.bonappetit.com/photos/5b69f16006027f654a27cd19/1:1/w_2560%2Cc_limit/ba-margarita-1.jpg');
+INSERT INTO recipes(name, image) VALUES ('Margarita', 'https://images.unsplash.com/photo-1590701833281-e6283af0948d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2050&q=80');
 INSERT INTO ingredients(text, recipe_id) VALUES ('Tequila', 1);
 INSERT INTO ingredients(text, recipe_id) VALUES ('Lime Juice', 1);
 INSERT INTO ingredients(text, recipe_id) VALUES ('Triple sec', 1);
@@ -39,3 +39,21 @@ INSERT INTO ingredients(text, recipe_id) VALUES ('Gin', 4);
 INSERT INTO ingredients(text, recipe_id) VALUES ('Lime Juice', 4);
 INSERT INTO ingredients(text, recipe_id) VALUES ('Sugar', 4);
 INSERT INTO ingredients(text, recipe_id) VALUES ('Soda', 4);
+
+INSERT INTO recipes(name, image) VALUES ('Old fashioned', 'https://images.unsplash.com/photo-1595977437232-9a0426ebfe4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+INSERT INTO ingredients(text, recipe_id) VALUES ('Bourbon', 5);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Angostura bitters', 5);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Sugar', 5);
+
+INSERT INTO recipes(name, image) VALUES ('Espresso Martini', 'https://images.unsplash.com/photo-1526962093464-db85c516ba74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80');
+INSERT INTO ingredients(text, recipe_id) VALUES ('Kahlua', 6);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Vodka', 6);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Espresso', 6);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Sugar', 6);
+
+INSERT INTO recipes(name, image) VALUES ('Mojito', 'https://images.unsplash.com/photo-1622322331040-088df8424c89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
+INSERT INTO ingredients(text, recipe_id) VALUES ('Rum', 7);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Mint', 7);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Lime', 7);
+INSERT INTO ingredients(text, recipe_id) VALUES ('Sugar', 7);
+

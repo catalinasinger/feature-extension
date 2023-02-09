@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import IngredientsData from "./IngredientsData";
 import RecipeCard from "./RecipeCard";
 
-function RecipesPage() {
+function RecipesDisplay() {
   const [recipes, setRecipes] = useState([]);
 
   const fetchData = () => {
@@ -23,4 +23,4 @@ function RecipesPage() {
     </div>
   );
 }
-export default RecipesPage;
+export default RecipesDisplay;
