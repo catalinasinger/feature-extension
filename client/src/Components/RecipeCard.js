@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-function RecipeCard({recipe}) {
+export default function RecipeCard({ recipe }) {
 const [ingredients,setIngredients] = useState([]);
 
-    const fetchData = () => {
+    const fetchIngredients = () => {
         return fetch(`http://localhost:5050/ingredients/${recipe.id}`)
           .then((response) => response.json())
           .then((data) => setIngredients(data));
@@ -11,13 +11,13 @@ const [ingredients,setIngredients] = useState([]);
       };
     
       useEffect(() => {
-        fetchData();
+        fetchIngredients();
       }, []);
 
 
   return (
     <div key={recipe.id}>
-      <div className="container mx-auto bg-blue rounded-xl shadow-md border p-2 m-1  ">
+      <div className="container max-w-sm rounded overflow-hidden shadow-lg  ">
         <img className="w-full aspect-[5/4] hue-rotate-15" src={recipe.image} alt={recipe.name} />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-5">{recipe.name}</div>
@@ -36,4 +36,4 @@ const [ingredients,setIngredients] = useState([]);
 }
 
 
-export default RecipeCard;
+

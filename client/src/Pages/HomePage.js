@@ -1,8 +1,7 @@
-function HomePage() {
-    return (
-<div>Form goes here </div>
-    )
+import { useEffect, useState } from "react";
+
+export default function HomePage() {
   }
   
-  export default HomePage;
+
   
