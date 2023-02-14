@@ -2,7 +2,6 @@ import './App.css';
 import logo from './Images/Logo.png'
 import RecipesPage from './Pages/RecipesPage';
 import HomePage from './Pages/HomePage';
-import RecipeDetailPage from './Pages/RecipeDetailPage';
 import { useState } from "react";
 import Navbar from './Components/Navbar';
 import { Routes, Route } from 'react-router-dom';
@@ -30,7 +29,6 @@ function App() {
       <Routes>
         <Route path='/HomePage' element={<HomePage/>}/>
         <Route path='/RecipesPage' element={<RecipesPage query={query}/>}/>
-        <Route path="/Recipes/:id" element={<RecipeDetailPage />} />
       </Routes>
     </div>
 
