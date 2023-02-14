@@ -14,7 +14,7 @@ function Navbar ({ onChange }){
       type="text" 
       placeholder="Search" 
       className="input input-bordered"
-      onChange={onChange} 
+      onChange={onChange}
       />
     </div>
     <div className="dropdown dropdown-end">
@@ -28,13 +28,13 @@ function Navbar ({ onChange }){
         <li>
           <a className="justify-between">
             <span className="badge">
-              <NavLink to="/HomePage">
+              <NavLink to="/Home">
                     Home
                   </NavLink></span>
           </a>
           <a className="justify-between">
             <span className="badge">
-              <NavLink to="/RecipesPage">
+              <NavLink to="/Recipes">
                     Recipes
                   </NavLink></span>
           </a>

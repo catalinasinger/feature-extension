@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
-export default function HomePage() {
+export default function HomePage({ query }) {
+
   }
   
 

@@ -4,7 +4,7 @@ import RecipesPage from './Pages/RecipesPage';
 import HomePage from './Pages/HomePage';
 import { useState } from "react";
 import Navbar from './Components/Navbar';
-import { Routes, Route } from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 
 
 function App() {
@@ -20,15 +20,15 @@ function App() {
     <div className="container mx-auto bg-gray-200 rounded-xl shadow-md border p-8 m-10">
       {/*This is the outside border   */}
       
-      <Navbar onChange={handleChange} />
+      <Navbar onChange={handleChange}/>
 
       <center>
         <img src={logo} width="200" height="100" alt="Logo" />
       </center>
 
       <Routes>
-        <Route path='/HomePage' element={<HomePage/>}/>
-        <Route path='/RecipesPage' element={<RecipesPage query={query}/>}/>
+        <Route path='/Home' element={<HomePage query={query}/>}/>
+        <Route path='/Recipes' element={<RecipesPage query={query}/>}/>
       </Routes>
     </div>
 
