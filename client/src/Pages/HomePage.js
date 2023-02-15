@@ -1,5 +1,6 @@
 import { useState } from "react";
 import RecipesForm from "../Components/RecipesForm";
+import IngredientsCheckBox from "../Components/IngredientsCheckBox";
 
 export default function HomePage({ query }) {
   /*const [recipes, setRecipes] = useState([]);
@@ -9,9 +10,9 @@ export default function HomePage({ query }) {
   };
 */
   return (
-    <div>
-      <RecipesForm /*onSubmit={addRecipe=(newRecipe) => handleAddRecipe(newRecipe)}*//>
-    </div>
+   <div>
+    <RecipesForm />
+   </div>
   );
   }
   

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import RecipesDisplay from "../Components/RecipesDisplay";
-import RecipesFiltered from "../Components/RecipesFiltered";
 
 export default function RecipesPage({ query }) {
   const [recipes, setRecipes] = useState([]);
@@ -21,11 +20,7 @@ export default function RecipesPage({ query }) {
 
   return (
     <>
-    {filteredRecipes ? 
-    <RecipesFiltered filteredRecipes={filteredRecipes} />
-    :
-    <RecipesDisplay recipes={recipes} />
-    }
+    <RecipesDisplay recipes={filteredRecipes} />
    </>
   )
 }
