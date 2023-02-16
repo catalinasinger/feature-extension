@@ -33,7 +33,7 @@ export default function RecipesForm(/*{ onSubmit }*/) {
   return (
     <div class="container mx-auto w-2/6 px-4 py-5">
       <div class="my-4">
-        <h2 class= "flex justify-center font-semibold">Create a drink!</h2>
+        <h2 class= "flex justify-center font-semibold tracking-wide">Drink maker</h2>
       </div>
 
       <form /*onSubmit={handleSubmit}*/>
