@@ -1,4 +1,3 @@
-import IngredientsData from "./IngredientsData";
 import RecipeCard from "./RecipeCard";
 
 function RecipesDisplay ({ recipes }) {

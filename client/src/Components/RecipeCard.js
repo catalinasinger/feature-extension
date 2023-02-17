@@ -1,19 +1,5 @@
-import { useEffect, useState } from "react";
-
 export default function RecipeCard({ recipe }) {
-const [ingredients,setIngredients] = useState([]);
-
-    const fetchIngredients = () => {
-        return fetch(`http://localhost:5050/ingredients/${recipe.id}`)
-          .then((response) => response.json())
-          .then((data) => setIngredients(data));
-          console.log(ingredients)
-      };
-    
-      useEffect(() => {
-        fetchIngredients();
-      }, []);
-
+const ingredients = recipe.ingredients.split(',')
 
   return (
     <div key={recipe.id}>
@@ -22,7 +8,7 @@ const [ingredients,setIngredients] = useState([]);
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-5">{recipe.name}</div>
           <p className="text-gray-700 text-base">{ingredients.map((ingredient) =>
-          <div key ={ingredient.id}> {ingredient.text}</div>)}</p>
+          <div key ={ingredient}> {ingredient}</div>)}</p>
 
         </div>
         <div class="px-6 pt-4 pb-2">

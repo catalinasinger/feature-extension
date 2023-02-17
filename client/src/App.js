@@ -1,6 +1,6 @@
 import './App.css';
 import logo from './Images/Logo.png'
-import RecipesPage from './Pages/RecipesPage';
+import RecipeCreationPage from './Pages/RecipeCreationPage';
 import HomePage from './Pages/HomePage';
 import { useState } from "react";
 import Navbar from './Components/Navbar';
@@ -28,7 +28,7 @@ function App() {
 
       <Routes>
         <Route path='/Home' element={<HomePage query={query}/>}/>
-        <Route path='/Recipes' element={<RecipesPage query={query}/>}/>
+        <Route path='/Create' element={<RecipeCreationPage query={query}/>}/>
       </Routes>
     </div>
 

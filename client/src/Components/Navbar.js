@@ -34,8 +34,8 @@ function Navbar ({ onChange }){
           </a>
           <a className="justify-between">
             <span className="badge">
-              <NavLink to="/Recipes">
-                    Recipes
+              <NavLink to="/Create">
+                    Your cocktails
                   </NavLink></span>
           </a>
         </li>

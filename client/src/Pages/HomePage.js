@@ -1,7 +1,5 @@
-import { useState, useEffect } from "react";
-import RecipesForm from "../Components/RecipesForm";
+import { useEffect, useState } from "react";
 import RecipesDisplay from "../Components/RecipesDisplay";
-import IngredientsCheckBox from "../Components/IngredientsCheckBox";
 
 export default function HomePage({ query }) {
   const [recipes, setRecipes] = useState([]);
@@ -22,14 +20,7 @@ export default function HomePage({ query }) {
 
   return (
     <>
-    {query ? 
     <RecipesDisplay recipes={filteredRecipes} />
-    :
-    <RecipesForm />
-    }
    </>
-  );
-  }
-  
-
-  
+  )
+}
