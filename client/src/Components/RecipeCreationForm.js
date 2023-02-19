@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function RecipeCreationForm({ onAdd }) {
   const [recipe, setRecipe] = useState({
@@ -6,6 +7,8 @@ export default function RecipeCreationForm({ onAdd }) {
     url: "",
     ingredients: ""
   });
+
+  // const [isSubmitted, setIsSubmitted] = useState(false)
 
   const handleInputChange = (e) => {
     e.preventDefault();
@@ -30,9 +33,12 @@ export default function RecipeCreationForm({ onAdd }) {
       url: "",
       ingredients: ""
     });
+
+    //setIsSubmitted(true)
   };
 
   return (
+
     <div class="container mx-auto w-2/6 px-4 py-5">
       <div class="my-4">
         <h2 class= "flex justify-center font-semibold tracking-wide">Cocktail maker</h2>
@@ -78,9 +84,18 @@ export default function RecipeCreationForm({ onAdd }) {
 
       </form>
     </div>
+    
+    /*
+    { isSubmitted ? (
+      <>
+      <a className="justify-between">
+            <span className="badge">
+              <NavLink to="/Home">
+                    Home
+                  </NavLink></span>
+          </a>
+    ) : null
+    </>
+    */
   )
 }
-
-
-
- 

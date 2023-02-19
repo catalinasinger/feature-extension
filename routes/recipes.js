@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var db=require('../model/helper')
 
-/* GET recipes listing. */
+//Get recipes listing
 router.get('/', async function(req, res, next) {
 try {
   const response = await db ('select * from recipes;')
@@ -13,7 +13,7 @@ res.status(500).send()
 }
 });
 
-//get one recipe
+//Get ONE recipe
 router.get('/:id', async function(req, res, next) {
   const params = req.params
   const id = params.id
@@ -31,5 +31,19 @@ router.get('/:id', async function(req, res, next) {
   res.send(recipe)
 });
 
+// Create new recipes
+
+router.post("/", async (req, res) => {
+  const name = req.body.name
+  const image = req.body.image
+  const ingredients = req.body.ingredients
+
+  try {
+    await db(`INSERT INTO recipes (name, image, ingredients) values ('${name}', ${image}, ${ingredients})`)
+    res.send(201)
+  } catch(error) {
+    res.status(500).send(error)
+  }
+});
 
 module.exports = router;
