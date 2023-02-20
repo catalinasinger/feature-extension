@@ -8,7 +8,7 @@ export default function RecipeCreationForm({ onAdd }) {
     ingredients: ""
   });
 
-  // const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   const handleInputChange = (e) => {
     e.preventDefault();
@@ -34,7 +34,7 @@ export default function RecipeCreationForm({ onAdd }) {
       ingredients: ""
     });
 
-    //setIsSubmitted(true)
+    setIsSubmitted(true)
   };
 
   return (
@@ -85,14 +85,13 @@ export default function RecipeCreationForm({ onAdd }) {
       </form>
     </div>
     
-    /*
-    { isSubmitted ? (
+    /*{ isSubmitted ? (
       <>
       <a className="justify-between">
             <span className="badge">
               <NavLink to="/Home">
                     Home
-                  </NavLink></span>
+              </NavLink></span>
           </a>
     ) : null
     </>
