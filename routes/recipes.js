@@ -35,11 +35,11 @@ router.get('/:id', async function(req, res, next) {
 
 router.post("/", async (req, res) => {
   const name = req.body.name
-  const image = req.body.image
+  const image = req.body.url
   const ingredients = req.body.ingredients
 
   try {
-    await db(`INSERT INTO recipes (name, image, ingredients) values ('${name}', ${image}, ${ingredients})`)
+    await db(`INSERT INTO recipes (name, image, ingredients) values ('${name}', '${image}', '${ingredients}');`)
     res.send(201)
   } catch(error) {
     res.status(500).send(error)
