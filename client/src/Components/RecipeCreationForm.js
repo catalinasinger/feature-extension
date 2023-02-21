@@ -8,7 +8,7 @@ export default function RecipeCreationForm({ onAdd }) {
     ingredients: ""
   });
 
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [formSubmitionStatus, setFormSubmitionStatus] = useState('notSubmitted')
 
   const handleInputChange = (e) => {
     e.preventDefault();
@@ -27,14 +27,7 @@ export default function RecipeCreationForm({ onAdd }) {
     console.log("form button clicked!");
     
     onAdd(recipe);
-
-    setRecipe({
-      name: "",
-      url: "",
-      ingredients: ""
-    });
-
-    setIsSubmitted(true)
+    setFormSubmitionStatus('submitted');
   };
 
   return (
@@ -44,6 +37,7 @@ export default function RecipeCreationForm({ onAdd }) {
         <h2 class= "flex justify-center font-semibold tracking-wide">Cocktail maker</h2>
       </div>
 
+{formSubmitionStatus === 'notSubmitted' && 
       <form onSubmit={handleSubmit}>
       <div class="mb-6">
         <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -83,18 +77,21 @@ export default function RecipeCreationForm({ onAdd }) {
       </div>
 
       </form>
-    </div>
-    
-    /*{ isSubmitted ? (
-      <>
-      <a className="justify-between">
-            <span className="badge">
+      }
+
+{formSubmitionStatus === 'submitted' && (
+          <div>
+             <h2>Your recipe has been created!</h2>
+             <a className="justify-between">
+                <span className="badge">
               <NavLink to="/Home">
-                    Home
-              </NavLink></span>
-          </a>
-    ) : null
-    </>
-    */
+                 Check it out here 
+              </NavLink>
+              </span>
+              </a>
+          </div>
+        )}
+
+    </div>
   )
 }
